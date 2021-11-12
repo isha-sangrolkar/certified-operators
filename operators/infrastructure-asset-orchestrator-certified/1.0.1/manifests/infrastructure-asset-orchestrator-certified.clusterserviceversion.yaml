@@ -11,7 +11,7 @@ metadata:
           "metadata": {
             "name": "modelbuilder-token"
           },
-          "spec": null
+          "spec": {}
         },
         {
           "apiVersion": "infrastructure.asset.orchestrator.com/v1",
