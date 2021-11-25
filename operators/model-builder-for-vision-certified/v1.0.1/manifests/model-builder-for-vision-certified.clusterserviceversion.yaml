@@ -43,7 +43,7 @@ metadata:
     capabilities: Seamless Upgrades
     categories: Developer Tools
     certified: "false"
-    containerImage: 'quay.io/prajyor925/modelbuilderoperator:keycloak7.5.0-v1.18.6'
+    containerImage: 'registry.connect.redhat.com/ibm/modelbuilder-operator:v1.0.1-1'
     createdAt: "2021-08-28T12:00:00Z"
     operators.operatorframework.io/builder: operator-sdk-v1.11.0
     operators.operatorframework.io/project_layout: ansible.sdk.operatorframework.io/v1
@@ -575,18 +575,18 @@ spec:
                 - name: RELATED_IMAGE_PGO_CLIENT
                   value: registry.connect.redhat.com/ibm/modelbuilder-pgo-util:v1.0.0-1
                 - name: RELATED_IMAGE_COREML_AUGMENTOR
-                  value: 'us.icr.io/modelbuilder/coreml_augmentor:v1.0.1'
+                  value: registry.connect.redhat.com/ibm/modelbuilder-augmentor:v1.0.1-1
                 - name: RELATED_IMAGE_NGINX
-                  value: 'us.icr.io/modelbuilder/image-server:v1.0.1'
+                  value: registry.connect.redhat.com/ibm/modelbuilder-image-server:v1.0.1-1
                 - name: RELATED_IMAGE_MB_AUTH_COREML
-                  value: 'us.icr.io/modelbuilder/auth-service:v1.0.1'
+                  value: registry.connect.redhat.com/ibm/modelbuilder-auth-service:v1.0.1-1
                 - name: RELATED_IMAGE_MB_SERVICE_COREML
-                  value: 'us.icr.io/modelbuilder/cv-training-service:v1.0.1'
+                  value: registry.connect.redhat.com/ibm/modelbuilder-cv-training-service:v1.0.1-1
                 - name: RELATED_IMAGE_REDIS
                   value: registry.redhat.io/rhel8/redis-6
                 - name: RELATED_IMAGE_UTIL
-                  value: 'quay.io/deeksha_hegde/ocp-aws-mb-util:v2'
-                image: quay.io/prajyor925/modelbuilderoperator:keycloak7.5.0-v1.18.6
+                  value: registry.connect.redhat.com/ibm/modelbuilder-util:v1.0.1-1
+                image: registry.connect.redhat.com/ibm/modelbuilder-operator:v1.0.1-1
                 name: modelbuilder
                 livenessProbe:
                   httpGet:

@@ -87,7 +87,7 @@ spec:
                 description: 'VM request method. Default: dynamic'
                 type: string
               email_notification:
-                description: Email Notification
+                description: Notify via email when Virtual Machine provisioning fails for model training tasks
                 type: object
                 properties:
                   accept:
